@@ -71,6 +71,8 @@
       The live React form (src/components/Contact.jsx) posts to this same form-name.
     -->
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
       <input type="text" name="fullName" />
       <input type="email" name="email" />
       <input type="text" name="company" />

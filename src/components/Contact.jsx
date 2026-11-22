@@ -41,11 +41,12 @@ export default function Contact() {
 
     setStatus('submitting')
     try {
-      await fetch('/', {
+      const res = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...form }),
       })
+      if (!res.ok) throw new Error(`Form submission failed: ${res.status}`)
       setStatus('success')
       setForm({ fullName: '', email: '', company: '', service: '', requirements: '', 'bot-field': '' })
     } catch (err) {

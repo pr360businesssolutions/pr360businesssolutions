@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pr360businesssolution.netlify.app/sitemap.xml

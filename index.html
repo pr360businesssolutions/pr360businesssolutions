@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#172D4A" />
+
+    <!-- Primary SEO -->
+    <title>PR 360° Business Solution | Software Testing &amp; QA Services</title>
+    <meta
+      name="description"
+      content="Software testing, QA automation and dedicated QA resources for startups, SaaS and software companies. Based in Pune, India."
+    />
+    <meta
+      name="keywords"
+      content="Software Testing Services, QA Outsourcing, Automation Testing, Selenium Testing, Playwright Testing, Manual QA, Dedicated QA Engineers, Software Testing Company in Pune, API Testing Services"
+    />
+    <meta name="author" content="PR 360° Business Solution" />
+    <link rel="canonical" href="https://pr360businesssolution.netlify.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PR 360° Business Solution | Software Testing &amp; QA Services" />
+    <meta
+      property="og:description"
+      content="Reliable QA expertise for startups, SaaS and software companies — manual testing, automation, API testing and dedicated QA resources. Pune, India."
+    />
+    <meta property="og:image" content="/logo.svg" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PR 360° Business Solution | Software Testing &amp; QA Services" />
+    <meta
+      name="twitter:description"
+      content="Reliable QA expertise. Quality you can trust. Manual, automation, API testing & dedicated QA resources."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured data: Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "PR 360° Business Solution",
+        "description": "Software Testing & Quality Assurance services — dedicated QA resources and project-based testing.",
+        "areaServed": "Global",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "email": "pr360business@gmail.com",
+        "telephone": "+91 97678 40878",
+        "slogan": "Reliable QA Expertise. Quality You Can Trust."
+      }
+    </script>
+  </head>
+  <body>
+    <!--
+      Hidden static form so Netlify's build-time bot detects the form fields.
+      The live React form (src/components/Contact.jsx) posts to this same form-name.
+    -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="fullName" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <select name="service"></select>
+      <textarea name="requirements"></textarea>
+    </form>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
